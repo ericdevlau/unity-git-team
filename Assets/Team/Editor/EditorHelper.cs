@@ -452,10 +452,5 @@ namespace UniRx.EditorExtras.Editor
         }
 
         static GUIStyle _boldLabelStyle;
-
-        public static GUIStyle HeaderLabelStyle
-        {
-            get { return BoldLabelStyle; }
-        }
     }
 }
