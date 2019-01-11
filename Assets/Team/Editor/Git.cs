@@ -222,7 +222,7 @@ namespace UniRx.Team.Editor
                     reverts.Add(file);
             }
 
-            var args = string.Format("merge -s recursive -X theirs {0} -m \"Overwrite Merge\"", UpstreamBranch);
+            var args = string.Format("merge -X theirs {0} -m \"Overwrite Merge\"", UpstreamBranch);
             StartGitProcess(args, true);
 
             foreach (var file in reverts)
